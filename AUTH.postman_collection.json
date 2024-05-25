@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "74fd51b2-c196-450e-bfc0-c7d2ebac1429",
+		"name": "AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24174456",
+		"_collection_link": "https://red-shuttle-826138.postman.co/workspace/CSAI~70c1ddcb-6f5a-4586-825e-e31b296fd503/collection/24174456-74fd51b2-c196-450e-bfc0-c7d2ebac1429?action=share&source=collection_link&creator=24174456"
+	},
+	"item": [
+		{
+			"name": "REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "lamin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lamin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lamin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "lamin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lamin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lamin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "lamin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lamin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lamin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/protected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"protected"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
